@@ -3,7 +3,9 @@
   overflow: hidden;
   background: rgb(19, 19, 19);
 }
-
+.rfm-marquee-container{
+  position: absolute;
+}
 .fixed-headings{
   position: fixed;
   display: flex;
