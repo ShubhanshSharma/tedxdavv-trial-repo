@@ -24,6 +24,10 @@
   font-style: normal;
 }
 
+.rfm-marquee-container{
+  position: absolute !important;
+}
+
 
 
 
