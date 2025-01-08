@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Protomolecule-regular';
+    src: url('../Fonts/Protomolecule-Regular.ttf') format('truetype');
+}
+.ABOUT_2025_main{
+    width: screen;
+    min-height: 100vh;
+    background-color: black;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    padding: 60px 100px;
+    /* background: url('../../Images/stars1.jpg')  top center; 
+    background-size: 100%; */
+    text-transform: uppercase;
+}
+
+.ABOUT_2025_main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Or any desired color */
+    opacity: 0.8; /* Adjust opacity for dimming */
+    z-index: 0; /* Ensure it stays behind content */
+    pointer-events: none; /* Allow interaction with child elements */
+}
+
+.about_section_1, .about_section_3 {
+    width: 100%;
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+    min-height: 100vh;
+    
+}
+
+.about_section_2{
+    width: 100%;
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 100vh;   
+}
+
+/* .about_2025_stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    height: 100vh;
+    z-index: 0; 
+    animation: ease star-blink  2s infinite alternate;
+    background: url('../../Images/stars1.jpg') no-repeat center center; 
+    opacity: 0.25;
+    background-size: cover; 
+} */
+
+
+/* Responsive  */
+
+@media screen and (max-width: 480px) {
+    .ABOUT_2025_main{
+        width: 100vw;
+        min-height: 100vh;
+        background-color: black;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: url('../../Images/stars1.jpg')  top center; 
+        background-size: 100%;
+        row-gap: 80px;
+        /* padding: 60px 10px; */
+        text-transform: uppercase;
+        align-items: center;
+    }
+
+    .about_section_1, .about_section_3 {
+        width: 100vw;
+        display:  flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 80px;
+        min-height: 100vh;
+        align-items: center;
+        z-index: 5; 
+        padding: 0 20px;
+        margin-bottom: -120px;
+    }
+    
+    .about_section_2{
+        width: 100vh;
+        display:  flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;   
+        padding: 0 20px;
+        align-items: center;
+        margin-bottom: -120px;
+        z-index: 5; 
+        gap: 80px;
+    }
+    
+    /* .about_2025_stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100vh;
+        z-index: -10; 
+        animation: ease star-blink  2s infinite alternate;
+        background: url('../../Images/stars1.jpg') no-repeat center center; 
+        opacity: 0.25;
+        background-size: cover; 
+    } */
+    
+}

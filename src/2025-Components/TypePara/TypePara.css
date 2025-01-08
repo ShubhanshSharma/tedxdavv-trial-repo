@@ -1,0 +1,14 @@
+.typing_text_para{
+    font-weight: 100;
+    font-size: 16px;
+    width: 400px;
+    color: rgb(202, 202, 202);
+    z-index: 10;
+}
+
+@media screen and (max-width: 480px){
+    .typing_text_para{
+        width: 90dvw;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,14 @@
+.typing_text_heading{
+    font-size: 34px;
+    color: rgb(198, 198, 198);
+    font-weight: 100;
+    align-self: flex-start;
+    z-index: 10;
+}
+
+
+@media screen and (max-width: 480px) {
+    .typing_text_heading{
+        font-size: 24px;
+    }
+}
